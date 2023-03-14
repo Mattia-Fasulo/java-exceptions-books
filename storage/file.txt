@@ -1,0 +1,2 @@
+{title='LOR', author='Mattia Fasulo', publisher='Mondadori', numPages=220}
+{title='De amicitia', author='Platone', publisher='Mondadori', numPages=79}

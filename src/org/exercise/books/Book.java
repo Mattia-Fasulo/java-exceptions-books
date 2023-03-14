@@ -2,6 +2,7 @@ package org.exercise.books;
 
 public class Book {
     //ATTRIBUTES
+
     private String title;
     private String author;
     private String publisher;
@@ -25,6 +26,8 @@ public class Book {
         }else {
             this.numPages = numPages;
         }
+
+
     }
 
     //METHODS
@@ -34,7 +37,15 @@ public class Book {
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", numPages=" + numPages +
+                '}';
+    }
     //GETTER AND SETTER
 
     public String getTitle() {
