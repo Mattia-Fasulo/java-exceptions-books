@@ -9,23 +9,23 @@ public class Book {
     private int numPages;
 
     //CONSTRUCTOR
-    public Book(String title, String author, String publisher, int numPages) {
+    public Book (String title, String author, String publisher, int numPages) throws IllegalArgumentException, NullPointerException {
 
         isNull(title ,"title");
-        this.title = title;
 
         isNull(author, "author");
-        this.author = author;
-
 
         isNull(publisher, "publisher");
-        this.publisher = publisher;
 
         if (numPages <= 0){
             throw new IllegalArgumentException("number of pages cannot be equal to or less than 0");
-        }else {
-            this.numPages = numPages;
         }
+
+        this.title = title;
+        this.author = author;
+        this.publisher = publisher;
+        this.numPages = numPages;
+
 
 
     }
